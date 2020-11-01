@@ -37,7 +37,7 @@
         </v-container>
         <v-flex xs12 text-xs-center>
           <v-btn  @click.native="save"  dark round class="text-capitalize style-font subheading" :style="$vuetify.breakpoint.mdAndDown ? 'height: 60px; width: 200px; border-radius: 35px; background-color: #DEDEDE;' : 'height: 70px; width: 350px; border-radius: 35px; background-color: #DEDEDE;'">Subir Película</v-btn>
-           <v-flex xs8>
+           <v-flex xs12 text-xs-center mt-2>
             <v-alert v-if="status.show" style="height: 40px !important" :color="status.error ? 'error' : 'success'" :icon="status.error ? 'warning' : 'check'" value="true">{{status.message}}</v-alert>
           </v-flex>
         </v-flex>
@@ -118,7 +118,6 @@ export default {
           this.status.message = 'Se ha guardado la Película.'
           this.status.show = true
           this.congratulations = true
-          this.$refs.movieForm.clear()
         } catch (error) {
           console.log(error)
           this.status.loading = false
@@ -169,12 +168,10 @@ export default {
 </script>
 <style scoped>
   .style-font {
-   font-family: montserrat-regular;
    color: #9B9B9B;
   }
 
   .input-style {
-     font-family: montserrat-regular;
      font-size: 16px;
   }
 

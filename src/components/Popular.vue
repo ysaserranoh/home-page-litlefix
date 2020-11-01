@@ -17,7 +17,7 @@
                   <v-flex class="tile__title" mt-5 pt-5>
                     <v-flex xs12 text-xs-left>
                       <v-btn outline class="mt-5" style="width:20px; height: 20px;" fab dark>
-                        <v-icon size="12" :style="$vuetify.breakpoint.smAndDown ? 'margin-left: -15px' : 'margin-left: 2px;'" class=" rotate-icon" dark>details</v-icon>
+                        <v-icon size="12" style="margin-left: 2px;" class=" rotate-icon" dark>details</v-icon>
                       </v-btn>
                     </v-flex>
                     <v-flex xs12 ml-2 mr-3>

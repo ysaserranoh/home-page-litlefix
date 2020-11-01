@@ -4,7 +4,6 @@ import router from './router'
 import store from './store'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import 'wfk-montserrat/montserrat.css'
 
 Vue.config.productionTip = false
 Vue.use(Vuetify)

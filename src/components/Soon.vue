@@ -1,5 +1,5 @@
 <template>
-  <v-flex>
+  <v-flex offset>
     <div class="contain" :style="$vuetify.breakpoint.smAndDown ? 'min-height: 280px;' : 'min-height: 300px;'">
       <div class="row">
         <div class="style-font pb-2 mb-2 title white--text font-weight-bold">Próximamente</div>
@@ -242,12 +242,10 @@ export default {
   }
 
   .style-font {
-   font-family: montserrat-regular;
    color: #999999;
   }
 
   .style-font-item {
-    font-family: montserrat-regular;
     color: #999999;
     font-size: 8px;
   }

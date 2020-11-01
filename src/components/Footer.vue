@@ -74,7 +74,6 @@ export default {
 </script>
 <style scoped>
 .style-font {
- font-family: montserrat-regular;
  color: #999999;
 }
 .point{

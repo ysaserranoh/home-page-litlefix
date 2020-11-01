@@ -26,27 +26,27 @@
           </div>
           <v-list-tile class="mt-3">
             <v-list-tile-content>
-              <v-list-tile-title class="body-1 white--text style-font text-capitalize">Inicio</v-list-tile-title>
+              <v-list-tile-title class="body-1 white--text text-capitalize">Inicio</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile class="mt-3 margin-list">
             <v-list-tile-content>
-              <v-list-tile-title class="body-1 white--text style-font text-capitalize">Series</v-list-tile-title>
+              <v-list-tile-title class="body-1 white--text text-capitalize">Series</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile class="mt-3 margin-list">
             <v-list-tile-content>
-              <v-list-tile-title class="body-1 white--text style-font text-capitalize">Películas</v-list-tile-title>
+              <v-list-tile-title class="body-1 white--text text-capitalize">Películas</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile class="mt-3 margin-list">
             <v-list-tile-content>
-              <v-list-tile-title class="body-1 white--text style-font text-none">Agregados recientemente</v-list-tile-title>
+              <v-list-tile-title class="body-1 white--text text-none">Agregados recientemente</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-list-tile class="mt-3 margin-list">
             <v-list-tile-content>
-              <v-list-tile-title class="body-1 white--text style-font text-none">Mi lista</v-list-tile-title>
+              <v-list-tile-title class="body-1 white--text text-none">Mi lista</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-btn class="add-movies mt-4" style="margin-left: -5px" @click="add = !add" color="white" small fab flat>
@@ -69,7 +69,7 @@
                     </v-list-tile-content>
                   </v-flex>
                   <v-flex xs11 style="margin-top: -10px;">
-                    <v-text-field v-if="search" class="style-font ml-1" label="Titulos, géneros, personas" single-line hide-details></v-text-field>
+                    <v-text-field v-if="search" class="ml-1" label="Titulos, géneros, personas" single-line hide-details></v-text-field>
                   </v-flex>
                   <v-flex xs1 v-if="!search">
                     <v-list-tile-content>
@@ -83,7 +83,7 @@
               <v-layout row wrap>
                 <v-list-tile class="mt-3 margin-list_section-3">
                 <v-list-tile-content>
-                  <v-list-tile-title class="body-1 white--text font-weight-medium style-font text-capitalize">Niños</v-list-tile-title>
+                  <v-list-tile-title class="body-1 white--text font-weight-medium text-capitalize">Niños</v-list-tile-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-list-tile class="mt-3 margin-list_section-3">
@@ -109,26 +109,26 @@
                         <img :src="require('../assets/' + currentUser.image)">
                       </v-list-tile-avatar>
                       <v-list-tile-content style="margin-left: -15px">
-                        <v-list-tile-title :class="currentUser.visited ? 'caption style-font  black--text ' : 'caption style-font'">{{ currentUser.name }}</v-list-tile-title>
+                        <v-list-tile-title :class="currentUser.visited ? 'caption  black--text ' : 'caption'">{{ currentUser.name }}</v-list-tile-title>
                       </v-list-tile-content>
                     </v-list-tile>
                   </v-list>
                   <v-list class="" subheader dense>
                     <v-list-tile style="cursor: pointer;">
                      <v-list-tile-content>
-                        <v-list-tile-title class="caption style-font">Configuración</v-list-tile-title>
+                        <v-list-tile-title class="caption">Configuración</v-list-tile-title>
                       </v-list-tile-content>
                     </v-list-tile>
                    <v-divider class="mx-2"></v-divider>
                     <v-list-tile style="cursor: pointer;">
                        <v-list-tile-content>
-                        <v-list-tile-title  class="caption style-font">Ayuda</v-list-tile-title>
+                        <v-list-tile-title  class="caption">Ayuda</v-list-tile-title>
                       </v-list-tile-content>
                     </v-list-tile>
                     <v-divider class="mx-2"></v-divider>
                     <v-list-tile style="cursor: pointer;">
                       <v-list-tile-content>
-                        <v-list-tile-title class="caption font-weight-bold  style-font">Log Out</v-list-tile-title>
+                        <v-list-tile-title class="caption font-weight-bold ">Log Out</v-list-tile-title>
                       </v-list-tile-content>
                     </v-list-tile>
                   </v-list>
@@ -156,26 +156,26 @@
           </v-list>
         </v-toolbar>
         <div class="text-xs-left">
-          <v-btn round class="text-capitalize caption py-3 ml-3" style="width: 160px" color="grey darken-3" dark>
+          <v-btn round class="text-capitalize caption  ml-3" style="width: 160px" color="grey darken-3" dark>
             <img style="margin-left: -80px" class="mr-1" width="30" src='../assets/icon2.png'>
             User 02
           </v-btn>
         </div>
         <v-list-tile style="cursor: pointer; margin-bottom: -5px">
          <v-list-tile-content>
-            <v-list-tile-title class="caption style-font">Cambiar usuario</v-list-tile-title>
+            <v-list-tile-title class="caption">Cambiar usuario</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-divider class="mx-3"></v-divider>
           <v-list-tile style="cursor: pointer; margin-top: -10px; margin-bottom: -5px">
            <v-list-tile-content>
-              <v-list-tile-title class="caption style-font">Configuración</v-list-tile-title>
+              <v-list-tile-title class="caption">Configuración</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         <v-divider class="mx-3"></v-divider>
         <v-list-tile style="cursor: pointer; margin-top: -10px; margin-bottom: -5px">
            <v-list-tile-content>
-            <v-list-tile-title  class="caption style-font">Ayuda</v-list-tile-title>
+            <v-list-tile-title  class="caption">Ayuda</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-divider class="mx-3"></v-divider>
@@ -184,34 +184,34 @@
       <v-list subheader dense>
         <v-list-tile style="cursor: pointer;">
          <v-list-tile-content>
-            <v-list-tile-title class="caption style-font">Series</v-list-tile-title>
+            <v-list-tile-title class="caption">Series</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile style="cursor: pointer; margin-top: -10px">
            <v-list-tile-content>
-            <v-list-tile-title  class="caption style-font">Peliculas</v-list-tile-title>
+            <v-list-tile-title  class="caption">Peliculas</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
          <v-list-tile style="cursor: pointer;margin-top: -10px">
            <v-list-tile-content>
-            <v-list-tile-title  class="caption style-font">Mi lista</v-list-tile-title>
+            <v-list-tile-title  class="caption">Mi lista</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
          <v-list-tile style="cursor: pointer; margin-top: -10px">
            <v-list-tile-content>
-            <v-list-tile-title class="caption style-font">Niños</v-list-tile-title>
+            <v-list-tile-title class="caption">Niños</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
 
         <div class="text-xs-left">
-          <v-btn round class="add-movies-mobile text-capitalize caption py-3 ml-3" style="width: 160px" color="red accent-4" dark>
+          <v-btn round class="add-movies-mobile text-capitalize caption  ml-3" style="width: 160px" color="red accent-4" dark>
             <v-icon medium class="mr-1" style="margin-left:-30px; margin-top: -10px">+</v-icon> Agregar película
           </v-btn>
         </div>
 
         <v-list-tile style="cursor: pointer;">
           <v-list-tile-content>
-            <v-list-tile-title class="caption font-weight-bold  style-font">Log Out</v-list-tile-title>
+            <v-list-tile-title class="caption font-weight-bold ">Log Out</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -266,19 +266,13 @@ export default {
     margin-top: 0px;
   }
 
-  .style-font {
-   font-family: montserrat-regular;
-  }
-
   .add-movies {
     background-color: #e50914;
-    font-family: montserrat-regular;
-    padding: 20px;
+/*    padding: 20px;*/
   }
 
   .add-movies-mobile {
     background-color: #e50914;
-    font-family: montserrat-regular;
   }
 
   .diag-cont:after {

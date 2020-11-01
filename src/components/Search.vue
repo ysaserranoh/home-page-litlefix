@@ -30,7 +30,6 @@
   }
 
   .style-font {
-   font-family: montserrat-regular;
    color: #999999;
   }
 </style>
